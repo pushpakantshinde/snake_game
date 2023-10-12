@@ -21,4 +21,3 @@ class Food(Turtle):
     def clear_food(self):
         self.hideturtle()
 
-
