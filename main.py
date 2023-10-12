@@ -41,6 +41,18 @@ while is_game_on:
         snake.snake_reset()
 
 
+    # Detect collision with tail
+    #--------------------------------------------------------
+    # for segment in snake.segments:
+    #     if segment == snake.head:
+    #         pass
+    #     elif snake.head.distance(segment) < 20:
+    #         score.game_over()
+    #--------------------------------------------------------
+
+    # OR
+
+
     for segment in snake.segments[1:]:
         if snake.head.distance(segment) < 10:  # distance 10 is decided based on trial & error
             snake.clear_snake()           # Clear the snake
